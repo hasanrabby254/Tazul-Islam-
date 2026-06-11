@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-display: "Outfit", "Plus Jakarta Sans", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-signature: "Caveat", cursive;
+
+  --color-brand-primary: #102a43;       /* Deep Slate Blue */
+  --color-brand-secondary: #0f172a;     /* Charcoal/Dark Slate */
+  --color-brand-accent: #115e59;        /* Deep Teal Paint stroke color */
+  --color-brand-accent-light: #2dd4bf;  /* Bright Teal accent */
+  --color-brand-cream: #faf8f5;         /* Soft Retro Cream */
+  --color-brand-gold: #c29d53;          /* Gold Badge Accent */
+  --color-brand-gold-dark: #a17c36;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #FAF8F5;
+    color: #1e293b;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FAF8F5;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #e2e8f0;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c29d53;
+  }
+}
+
+/* Custom CSS for a beautiful paint brush splat effect / frame for the mock image style */
+.brush-splash-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.brush-splash-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140%;
+  height: 140%;
+  opacity: 0.15;
+  background-color: var(--color-brand-accent);
+  filter: blur(40px);
+  z-index: 0;
+  border-radius: 50%;
+}
+
+/* Animation for Circular Seal */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Print styles for Resume view */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
