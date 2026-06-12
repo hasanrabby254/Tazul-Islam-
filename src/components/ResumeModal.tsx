@@ -64,11 +64,11 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               <div className="flex flex-wrap items-center justify-center gap-y-2 gap-x-6 text-sm text-slate-600 mt-4 font-mono">
                 <span className="flex items-center space-x-1">
                   <Mail className="w-4 h-4 text-slate-400" />
-                  <a href="mailto:tazulislam400@yahoo.com" className="hover:underline">tazulislam400@yahoo.com</a>
+                  <a href="mailto:tazulislam4600@yahoo.com" className="hover:underline">tazulislam4600@yahoo.com</a>
                 </span>
                 <span className="flex items-center space-x-1">
                   <Phone className="w-4 h-4 text-slate-400" />
-                  <a href="tel:+8801931400081" className="hover:underline">+880 193 1400 081</a>
+                  <a href="tel:+8801921460081" className="hover:underline">+880 192 1460 081</a>
                 </span>
                 <span className="flex items-center space-x-1">
                   <MapPin className="w-4 h-4 text-slate-400" />

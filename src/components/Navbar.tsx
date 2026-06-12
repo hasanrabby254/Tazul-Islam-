@@ -121,13 +121,13 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
           {/* Direct Actions & Phone (Mockup design style) */}
           <div className="hidden lg:flex items-center space-x-4">
             <a 
-              href="tel:+8801931400081" 
+              href="tel:+8801921460081" 
               className={`flex items-center space-x-2 transition text-sm font-mono ${
                 scrolled ? "text-slate-600 hover:text-teal-600" : "text-slate-300 hover:text-[#2dd4bf]"
               }`}
             >
               <Phone className="w-4 h-4 text-[#2dd4bf]" />
-              <span>+880 (193) 1400 081</span>
+              <span>+880 (192) 1460 081</span>
             </a>
             
             <button
@@ -197,22 +197,22 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
           ))}
           <div className={`pt-4 space-y-3 border-t ${scrolled ? "border-slate-100" : "border-white/10"}`}>
             <a 
-              href="tel:+8801931400081"
+              href="tel:+8801921460081"
               className={`flex items-center space-x-3 px-4 py-3 rounded-xl transition ${
                 scrolled ? "text-slate-600 hover:text-slate-900 hover:bg-slate-50" : "text-slate-300 hover:text-white hover:bg-white/5"
               }`}
             >
               <Phone className="w-5 h-5 text-[#2dd4bf]" />
-              <span className="font-mono text-sm">+880 (193) 1400 081</span>
+              <span className="font-mono text-sm">+880 (192) 1460 081</span>
             </a>
             <a 
-              href="mailto:tazulislam400@yahoo.com"
+              href="mailto:tazulislam4600@yahoo.com"
               className={`flex items-center space-x-3 px-4 py-3 rounded-xl transition ${
                 scrolled ? "text-slate-600 hover:text-slate-900 hover:bg-slate-50" : "text-slate-300 hover:text-white hover:bg-white/5"
               }`}
             >
               <Mail className="w-5 h-5 text-[#2dd4bf]" />
-              <span className="font-mono text-sm">tazulislam400@yahoo.com</span>
+              <span className="font-mono text-sm">tazulislam4600@yahoo.com</span>
             </a>
           </div>
         </div>

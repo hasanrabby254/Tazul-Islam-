@@ -68,14 +68,14 @@ export default function Hero({ onOpenResume }: HeroProps) {
               </p>
 
               {/* Verified Professional Email link */}
-              <div className="pt-1">
+              <div className="pt-2">
                 <a 
-                  href="mailto:tazulislam400@yahoo.com" 
-                  className="inline-flex items-center space-x-2 text-sm text-[#c29d53] hover:text-white font-mono font-semibold transition-colors group"
+                  href="mailto:tazulislam4600@yahoo.com" 
+                  className="inline-flex items-center space-x-2.5 text-base text-teal-300 hover:text-white font-sans font-bold transition-all group bg-slate-900/50 border border-teal-500/20 px-3.5 py-2 rounded-xl hover:bg-slate-900/80 hover:border-teal-400/40 shadow-lg"
                   id="hero-email-link"
                 >
-                  <Mail className="w-4 h-4 text-[#c29d53] group-hover:text-white shrink-0" />
-                  <span className="underline decoration-dashed decoration-[#c29d53]/50 hover:decoration-white">tazulislam400@yahoo.com</span>
+                  <Mail className="w-4.5 h-4.5 text-[#c29d53] group-hover:text-teal-300 shrink-0" />
+                  <span className="tracking-wide">tazulislam4600@yahoo.com</span>
                 </a>
               </div>
             </div>

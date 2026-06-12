@@ -122,7 +122,7 @@ export default function Contact({ onOpenResume }: ContactProps) {
                 
                 {/* Email item */}
                 <a 
-                  href="mailto:tazulislam400@yahoo.com"
+                  href="mailto:tazulislam4600@yahoo.com"
                   className="group flex items-start space-x-3.5 p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-teal-500/40 transition-all cursor-pointer shadow-lg"
                 >
                   <div className="p-3 bg-[#c29d53]/15 text-[#c29d53] rounded-xl shrink-0">
@@ -133,14 +133,14 @@ export default function Contact({ onOpenResume }: ContactProps) {
                       OFFICIAL EMAIL
                     </span>
                     <span className="text-sm sm:text-base font-bold text-white group-hover:text-[#c29d53] transition-colors font-mono">
-                      tazulislam400@yahoo.com
+                      tazulislam4600@yahoo.com
                     </span>
                   </div>
                 </a>
 
                 {/* Phone item */}
                 <a 
-                  href="tel:+8801931400081"
+                  href="tel:+8801921460081"
                   className="group flex items-start space-x-3.5 p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-teal-500/40 transition-all cursor-pointer shadow-lg"
                 >
                   <div className="p-3 bg-[#c29d53]/15 text-[#c29d53] rounded-xl shrink-0">
@@ -151,8 +151,8 @@ export default function Contact({ onOpenResume }: ContactProps) {
                       DIRECT PHONE CALL
                     </span>
                     <span className="text-sm sm:text-base font-bold text-white group-hover:text-[#c29d53] transition-colors font-mono">
-                      +880 1931 400081
-                    </span>
+                      +880 1921 460081
+                     </span>
                   </div>
                 </a>
 
