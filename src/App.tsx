@@ -15,6 +15,7 @@ import Summary from "./components/Summary";
 import Experience from "./components/Experience";
 import EducationCertifications from "./components/EducationCertifications";
 import Skills from "./components/Skills";
+import References from "./components/References";
 import Contact from "./components/Contact";
 import ResumeModal from "./components/ResumeModal";
 import ScrollReveal from "./components/ScrollReveal";
@@ -85,6 +86,11 @@ export default function App() {
         {/* Skills Section */}
         <ScrollReveal>
           <Skills />
+        </ScrollReveal>
+
+        {/* References Section */}
+        <ScrollReveal>
+          <References />
         </ScrollReveal>
 
         {/* Footer & Contact Section */}

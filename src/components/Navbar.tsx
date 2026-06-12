@@ -22,6 +22,7 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
     { id: "experience", label: "Experience" },
     { id: "education", label: "Education & Certs" },
     { id: "skills", label: "Skills" },
+    { id: "references", label: "References" },
     { id: "contact", label: "Contact" }
   ];
 
@@ -185,7 +186,7 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
       {/* Mobile Drawer */}
       <div 
         className={`lg:hidden fixed left-4 right-4 md:left-8 md:right-8 top-[84px] shadow-xl transition-all duration-300 z-30 overflow-hidden rounded-3xl bg-white/95 backdrop-blur-md border border-slate-200 ${
-          isOpen ? "max-h-[450px] opacity-100 py-6" : "max-h-0 opacity-0 pointer-events-none"
+          isOpen ? "max-h-[500px] opacity-100 py-6" : "max-h-0 opacity-0 pointer-events-none"
         }`}
       >
         <div className="px-6 space-y-2">
