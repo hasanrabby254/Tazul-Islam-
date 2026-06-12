@@ -3,79 +3,59 @@ import { Experience, Education, Certification, SkillCategory } from "./types";
 export const experiences: Experience[] = [
   {
     id: "exp-1",
-    role: "Production Manager",
-    company: "Abdul Monem Ltd",
+    role: "Head Of Operations",
+    company: "Igloo Food & Beverage (Abdul Monem Ltd.)",
     duration: "Nov 2024 – Present",
-    location: "Dhaka, Bangladesh",
+    location: "Kawran Bazar, Dhaka, Bangladesh",
     highlights: [
-      "Manage end-to-end production operations (Man, Machine, Material) to optimize line output and maximize capacity utilization.",
-      "Achieved 98% Good Manufacturing Practices (GMP) compliance across production halls.",
-      "Maintained 100% safety compliance during rigorous IMB and GAO Audits.",
-      "Facilitated structured Root Cause Analysis (RCA) and implemented Corrective & Preventive Actions (CAPA).",
-      "Led the implementation of Lockout-Tagout (LOTO) procedures and rigorous PPE audits to create a zero-accident workspace.",
-      "Ensured strict alignment with Coca-Cola (KORE) guidelines and ISO reference frameworks."
+      "Manage end-to-end production operations (Man, Machine, Material) to maximize line output, optimize efficiency, and maintain peak capacity utilization.",
+      "Achieve and maintain 98% Good Manufacturing Practices (GMP) compliance across all food processing halls.",
+      "Maintain 100% compliance with safety requirements, leading teams to pass rigorous Integrated Management System (IMS) and Group Audit Office (GAO) audits.",
+      "Direct preventive maintenance, timely breakdown recovery, and conduct root cause analyses (RCA) to minimize machinery downtime.",
+      "Supervise raw materials and spare parts procurement, scheduling monthly plant start-ups and shutdowns to eliminate potential production losses.",
+      "Implement robust LOTO (Lockout/Tagout) procedures and PPE inspection systems for secure factory operations.",
+      "Serve as a core team member of the corporate Quality Management (QMS) and Environmental Management (EMS) steering committees.",
+      "Lead regulatory compliance initiatives under ISO standards, Halal guidelines, and Bangladesh Standards and Testing Institution (BSTI) limits."
     ]
   },
   {
     id: "exp-2",
-    role: "Assistant Production Manager",
-    company: "PRAN-RFL Group",
-    duration: "Dec 2021 – Jul 2024",
-    location: "Sylhet & Narsingdi, Bangladesh",
+    role: "Assistant Manager (Production)",
+    company: "PRAN-RFL Group (Mr. Noodles)",
+    duration: "Dec 2021 – Nov 2024",
+    location: "HIP, Sylhet, Bangladesh",
     highlights: [
-      "Designed shift-wise production reporting system that improved schedule adherence by 15%.",
-      "Ensured absolute compliance with GLP, GHP, GMP, HACCP, and ISO 22000:2018 parameters.",
-      "Minimised food and beverage production costs through Lean process enhancements and waste minimization protocols.",
-      "Monitored new product formulations and scaled production from bench-test pilot phases to mass manufacturing lines."
+      "Overseed absolute shift operations for Mr. Noodles processing lines (Instant, Cook & Stick, Cup, and Dry lines).",
+      "Ensured strict conformance with ISO 22000:2018 parameters, standard GMP, GHP, and HACCP flowcharts.",
+      "Cooperated proactively with R&D departments in raw material trials, recipe formulations, and scaling up product batches from pilot testing to large-scale lines.",
+      "Led cost-minimization protocols through implementation of waste reduction programs and continuous process improvement initiatives (Kaizen, 5S).",
+      "Conducted weekly supplier audits and evaluated incoming raw materials for spec adherence."
     ]
   },
   {
     id: "exp-3",
-    role: "In-Charge Quality Operations",
-    company: "Multiple Health Pharma Ltd.",
-    duration: "Dec 2020 – Nov 2022",
-    location: "Narayanganj, Bangladesh",
+    role: "Chemist (Quality Assurance)",
+    company: "Nestle Bangladesh Ltd. (Maggi Noodles)",
+    duration: "Dec 2017 – Nov 2021",
+    location: "Sreepur, Gazipur, Bangladesh",
     highlights: [
-      "Supervised overall manufacturing operations, enforcing strict batch validation and QA/QC parameters.",
-      "Coordinated cross-departmentally with Procurement, Logistics, and Warehousing to minimize batch delays.",
-      "Spearheaded production project budgeting, resources planning, and operational risk mitigation plans."
+      "Executed analytical, physical-chemical, and laboratory testing protocols on raw materials, packaging elements, and finished Maggi Noodles.",
+      "Managed audit preparation readiness for internal global Nestle teams and external regulatory authorities (Codex, US FDA 21 CFR, EU Food Safety, BRCGS).",
+      "Created, reviewed, and finalized plant SOPs, HACCP flow diagrams, traceability records, and critical quality checklist databases.",
+      "Facilitated investigations on batch quality deviations, establishing robust corrective actions (CAPA) to avoid reoccurrence."
     ]
   },
   {
     id: "exp-4",
-    role: "Sr. Officer Quality Assurance",
-    company: "Beacon Pharmaceutical Ltd",
-    duration: "Dec 2017 – Nov 2020",
-    location: "Dhaka, Bangladesh",
+    role: "Officer (Quality Control)",
+    company: "Sajeeb Group",
+    duration: "Jan 2013 – Nov 2017",
+    location: "Rupganj, Narayanganj, Bangladesh",
     highlights: [
-      "Created structured production plans aligned with market demand forecasts to prevent stock-outs.",
-      "Managed Batch Manufacturing Records (BMR) and Batch Packaging Records (BPR) reviewing.",
-      "Conducted raw material testing, physical inspections, and double-signature validation scripts.",
-      "Directed warehouse audits and physical stock inspection scripts for GMP compliance."
-    ]
-  },
-  {
-    id: "exp-5",
-    role: "Chemist",
-    company: "Nestle Bangladesh Ltd.",
-    duration: "Dec 2014 – Nov 2017",
-    location: "Sreepur / Gazipur, Bangladesh",
-    highlights: [
-      "Performed advanced physical-chemical and laboratory testing on raw materials, packaging elements, and finished dairy products.",
-      "Investigated quality deviations and non-conforming batches to establish robust protective guidelines.",
-      "Acted as a principal technical support member during internal nestle quality audits and international food safety reviews."
-    ]
-  },
-  {
-    id: "exp-6",
-    role: "Quality Control Specialist",
-    company: "Sqweb Group",
-    duration: "Jan 2013 – Nov 2014",
-    location: "Narayanganj, Bangladesh",
-    highlights: [
-      "Cataloged quality inspection records and verified product calibration reports.",
-      "Identified critical chemical and physical non-conformances in process streams.",
-      "Integrated customer feedback into continuous quality improvement programs."
+      "Supervised lab quality control tests for diversified products (Soft Drink Powder, Fruit Juice, Jam, Jelly, Sauce, Noodles, Pickles, Macaroni, Extruded Chips, Soya Nuggets).",
+      "Conducted major QC tests: Acidity, Brix, pH, Moisture, Viscosity, specific gravity, peroxide value of oil (POV), and free fatty acid (FFA) tests.",
+      "Evaluated Effluent Treatment Plant (ETP) parameters (water hardness, Cl, Fe, TDS, DO) to guarantee environment safety.",
+      "Undertook laboratory-scale trial batches of new product lines, estimating manufacturing costs, and reviewing raw ingredient specifications."
     ]
   }
 ];
@@ -83,189 +63,117 @@ export const experiences: Experience[] = [
 export const educationList: Education[] = [
   {
     id: "edu-1",
-    degree: "Executive MBA",
-    major: "Business Administration & Management",
-    institution: "Jagannath University",
-    duration: "Mar 2021 – Present"
+    degree: "Master of Science (M.Sc.)",
+    major: "Chemistry (1st Class)",
+    institution: "Govt. Titumir College, Dhaka",
+    duration: "Graduated: 2015"
   },
   {
     id: "edu-2",
-    degree: "Master of Science (M.Sc.)",
-    major: "Chemistry",
+    degree: "Bachelor of Science (B.Sc.)",
+    major: "Chemistry (2nd Class)",
     institution: "Govt. Titumir College, Dhaka",
-    duration: "Jan 2015 – Dec 2016"
+    duration: "Graduated: 2014"
   },
   {
     id: "edu-3",
-    degree: "Bachelor of Science (B.Sc. Hon's)",
-    major: "Chemistry",
-    institution: "Govt. Titumir College, Dhaka",
-    duration: "Jan 2011 – Dec 2015"
-  },
-  {
-    id: "edu-4",
     degree: "Higher Secondary Certificate (HSC)",
     major: "Science",
     institution: "Noakhali Govt. College",
-    duration: "Jan 2004 – Dec 2006"
+    duration: "Graduated: 2006"
   },
   {
-    id: "edu-5",
+    id: "edu-4",
     degree: "Secondary School Certificate (SSC)",
     major: "Science",
-    institution: "Pratapgonj High School",
-    duration: "Jan 1994 – Dec 2004"
+    institution: "Pratapgonj High School, Lakshmipur",
+    duration: "Graduated: 2004"
   }
 ];
 
 export const certifications: Certification[] = [
-  // Primary (Featured) Certs
   {
     id: "cert-1",
-    title: "Six Sigma Lean Professional",
-    issuer: "PRAN-RFL Group",
-    year: "2022",
+    title: "Management of GMP Audits",
+    issuer: "Bangladesh Society for Pharmaceutical Professionals (Dhaka University)",
+    year: "2023",
     highlighted: true
   },
   {
     id: "cert-2",
-    title: "Food Safety Management System (FSMS-ISO-22000:2018)",
-    issuer: "SME Foundation",
-    year: "2022",
+    title: "Six Sigma Level-1 Yellow Belt",
+    issuer: "PRAN-RFL Group",
+    year: "2023",
     highlighted: true
   },
   {
     id: "cert-3",
-    title: "Management of GMP Audit",
-    issuer: "University of Dhaka (IBA)",
+    title: "Food Safety Management System (FSMS)-ISO-22000:2018",
+    issuer: "SME Foundation",
     year: "2022",
     highlighted: true
   },
   {
     id: "cert-4",
-    title: "ISO Integrated Systems (QMS, EMS, SHE, OHSAS, MSDS)",
+    title: "Regulatory Requirements on Data Integrity Management in cGMP",
+    issuer: "Bangladesh Society for Pharmaceutical Professionals (Dhaka University)",
+    year: "2022",
+    highlighted: true
+  },
+  {
+    id: "cert-5",
+    title: "Korean Language Learning Certificate",
+    issuer: "Ekush Language Institute",
+    year: "2022",
+    highlighted: false
+  },
+  {
+    id: "cert-6",
+    title: "Japanese Language Certificate (06 Month)",
+    issuer: "JUAAB (Dhaka)",
+    year: "2022",
+    highlighted: false
+  },
+  {
+    id: "cert-7",
+    title: "ERP SAP Software (PP & MM Modules)",
+    issuer: "ECL Systems Ltd",
+    year: "2021",
+    highlighted: true
+  },
+  {
+    id: "cert-8",
+    title: "Integrated Management Systems (ISO, QMS, EMS, SHE, OHSAS, MSDS)",
     issuer: "Multiple Health Pharma Ltd.",
     year: "2021",
     highlighted: true
   },
   {
-    id: "cert-5",
-    title: "ERP SAP SOFTWARE (PP & MM Modules)",
-    issuer: "ECL Systems Ltd.",
-    year: "2021",
-    highlighted: true
-  },
-  // Additional 15+ GMP, GLP, HACCP certs
-  {
-    id: "cert-6",
-    title: "Hazard Analysis Critical Control Point (HACCP) System Implementation",
-    issuer: "SGS Training Services",
-    year: "2023",
-    highlighted: false
-  },
-  {
-    id: "cert-7",
-    title: "Advanced Good Manufacturing Practices (cGMP) for Food Industries",
-    issuer: "Bangladesh Standards and Testing Institution (BSTI)",
-    year: "2023",
-    highlighted: false
-  },
-  {
-    id: "cert-8",
-    title: "Good Laboratory Practice (GLP) Laboratory Systems",
-    issuer: "Nestle Technical Academy",
-    year: "2016",
-    highlighted: false
-  },
-  {
     id: "cert-9",
-    title: "Analytical Instruments Calibration & Validation",
-    issuer: "Nestle Quality Assurance Center",
-    year: "2015",
-    highlighted: false
-  },
-  {
-    id: "cert-10",
-    title: "Advanced Product Quality Planning (APQP)",
-    issuer: "PRAN-RFL Operations Academy",
+    title: "Lean Six Sigma Course",
+    issuer: "PRAN-RFL (Habigonj)",
     year: "2022",
     highlighted: false
   },
   {
-    id: "cert-11",
-    title: "Occupational Safety and Health Standards (OSHA)",
-    issuer: "National Safety Council of Bangladesh",
-    year: "2021",
-    highlighted: false
-  },
-  {
-    id: "cert-12",
-    title: "Chemical Safety & Material Safety Data Sheet (MSDS) Management",
-    issuer: "Nestle Safety Council",
-    year: "2016",
-    highlighted: false
-  },
-  {
-    id: "cert-13",
-    title: "Root Cause Analysis (RCA) & CAPA Methodology",
-    issuer: "Beacon Pharmaceuticals L&D",
-    year: "2019",
-    highlighted: false
-  },
-  {
-    id: "cert-14",
-    title: "Production Planning and Inventory Control (PPIC)",
-    issuer: "IBA, Dhaka",
-    year: "2023",
-    highlighted: false
-  },
-  {
-    id: "cert-15",
-    title: "Total Quality Management (TQM) in Modern Manufacturing",
-    issuer: "SME Foundation",
-    year: "2021",
-    highlighted: false
-  },
-  {
-    id: "cert-16",
-    title: "5S Workplace Organization Methodology Auditing",
-    issuer: "Abdul Monem Ltd Training Division",
-    year: "2024",
-    highlighted: false
-  },
-  {
-    id: "cert-17",
-    title: "Statistical Process Control (SPC) for Processing Lines",
-    issuer: "Nestle Operations",
-    year: "2017",
-    highlighted: false
-  },
-  {
-    id: "cert-18",
-    title: "Cleanroom Classification & Air Handling Systems in Pharmaceuticals",
-    issuer: "Beacon Quality Engineering",
+    id: "cert-10",
+    title: "Productivity Management Training",
+    issuer: "BUET (Dhaka)",
     year: "2018",
     highlighted: false
   },
   {
-    id: "cert-19",
-    title: "Good Documentation Practice (GDP) & Record Integrity",
-    issuer: "Beacon Compliance Team",
-    year: "2019",
+    id: "cert-11",
+    title: "HACCP Plan & CCP, OPRP Management",
+    issuer: "Nestle Bangladesh Ltd.",
+    year: "2014",
     highlighted: false
   },
   {
-    id: "cert-20",
-    title: "ISO 14001:2015 Environmental Management Audits",
-    issuer: "Multiple Health Pharma Quality Group",
-    year: "2021",
-    highlighted: false
-  },
-  {
-    id: "cert-21",
-    title: "Lockout-Tagout (LOTO) & Machine Guarding Safety Compliance",
-    issuer: "Abdul Monem Ltd Safety Council",
-    year: "2024",
+    id: "cert-12",
+    title: "Good Laboratory Practice (GLP) and GMP",
+    issuer: "Nestle Bangladesh Ltd.",
+    year: "2014",
     highlighted: false
   }
 ];
@@ -273,65 +181,70 @@ export const certifications: Certification[] = [
 export const skillCategories: SkillCategory[] = [
   {
     id: "skill-cat-1",
-    category: "Production & Operations",
+    category: "Operations & Processing",
     skills: [
-      "Production Management",
-      "Capacity Planning",
-      "Process Optimization",
-      "Man-Machine Management",
-      "cGMP Manufacturing",
-      "Line Efficiency Optimization",
-      "Cost Minimization"
+      "Production Planning",
+      "Capacity Optimization",
+      "Man & Machine Management",
+      "Preventive Maintenance",
+      "Raw Materials Procurement",
+      "Lean Six Sigma & Kaizen",
+      "Workplace Organize (5S)",
+      "Spare Parts Planning"
     ]
   },
   {
     id: "skill-cat-2",
-    category: "Quality & Compliance",
+    category: "Quality Control Tests",
     skills: [
-      "Quality Assurance (QA)",
-      "Quality Control (QC)",
-      "GMP Compliance",
-      "Good Laboratory Practice (GLP)",
-      "Good Documentation Practice (GDP)",
-      "ISO 22000:2018 (FSMS)",
-      "HACCP Controls",
-      "IMB / GAO Security Auditing",
-      "Data Integrity Checks"
+      "Acidity, pH & Brix tests",
+      "Oil Peroxide Value (POV)",
+      "Moisture & Viscosity",
+      "Free Fatty Acid (FFA)",
+      "Microleak Verification",
+      "Microbial: TPC, Yeast & Mold",
+      "Lab Equipment Verification",
+      "Requisition Estimation"
     ]
   },
   {
     id: "skill-cat-3",
-    category: "Technical & Chemistry",
+    category: "Food Safety & Regulations",
     skills: [
-      "Analytical Chemistry",
-      "NMR Spectroscopy",
-      "Inductively Coupled Plasma (ICP)",
-      "Hazard Mitigation",
-      "Standard Operating Procedures (SOP)",
-      "Batch Manufacturing Records (BMR)",
-      "Batch Packaging Records (BPR)"
+      "HACCP System Designs",
+      "ISO 22000:2018 (FSMS)",
+      "Good Manufacturing Practice (GMP)",
+      "Good Laboratory Practice (GLP)",
+      "Halal & BSTI Guidelines",
+      "Codex Alimentarius Standards",
+      "US FDA (21 CFR) Review",
+      "BRCGS for Food Safety"
     ]
   },
   {
     id: "skill-cat-4",
-    category: "Management & Leadership",
+    category: "Project & Policy Dev",
     skills: [
-      "Team Leadership & Training",
-      "Change Management",
-      "Project Budgeting",
-      "Operational Risk Assessment",
-      "Supplier Coordination"
+      "BTEB Technical Committee Member",
+      "CBLM Standard Writing",
+      "SEIP-BAPA Projects Coordination",
+      "ILO Apprenticeship Program",
+      "SCORE Finance Team Program",
+      "ETP Treatment (TDS, DO, Fe)",
+      "Bilingual Training (Spoken & Written)"
     ]
   },
   {
     id: "skill-cat-5",
-    category: "Systems & Languages",
+    category: "Tools & Languages",
     skills: [
-      "SAP ERP Solutions",
-      "Inventory Management Systems",
+      "SAP ERP Solutions (PP/MM)",
+      "MS Office Suite Proficiency",
+      "English (Spoken & Written Fluent)",
+      "Bengali (Native Language)",
+      "Japanese (Spoken & Listening Avg)",
       "Korean Language (Intermediate)",
-      "Bengali (Native)",
-      "English (Professional)"
+      "Bilingual Technical Reporting"
     ]
   }
 ];

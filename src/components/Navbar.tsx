@@ -67,49 +67,61 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
 
   return (
     <nav 
-      className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 border-b ${
-        scrolled 
-          ? "bg-white/95 backdrop-blur-md shadow-md py-3.5 border-slate-200/60" 
-          : "bg-transparent py-5 border-transparent"
-      } no-print`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 no-print px-4 sm:px-6 lg:px-8 py-4 sm:py-6`}
     >
-      {/* Premium subtle scroll indicator */}
       <div 
-        className="absolute bottom-0 left-0 h-[2px] bg-gradient-to-r from-[#2dd4bf] to-[#c29d53] transition-all duration-75 z-50"
-        style={{ width: `${scrollProgress}%` }}
-      />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+        className={`w-full max-w-7xl mx-auto rounded-full border transition-all duration-300 ${
+          scrolled 
+            ? "bg-white/95 backdrop-blur-md shadow-xl border-slate-200/80 py-2.5 sm:py-3 px-6 sm:px-8" 
+            : "bg-white shadow-[0_12px_40px_-15px_rgba(0,0,0,0.08)] border-white/90 py-3.5 sm:py-4.5 px-7 sm:px-10"
+        }`}
+      >
+        {/* Premium subtle scroll progress bar embedded at the top of the capsule */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[90%] h-[2px] bg-slate-100 rounded-full overflow-hidden pointer-events-none">
+          <div 
+            className="h-full bg-gradient-to-r from-[#0a8f76] to-[#2dd4bf] transition-all duration-75"
+            style={{ width: `${scrollProgress}%` }}
+          />
+        </div>
+
+        <div className="flex items-center justify-between relative">
           
-          {/* Logo / Cursive Signature */}
+          {/* Logo / BizCorpo-style Professional Brand Name */}
           <a 
             href="#home" 
             onClick={(e) => handleNavClick(e, "home")}
-            className="group flex flex-col focus:outline-none"
+            className="group flex items-center space-x-2.5 focus:outline-none select-none"
             id="nav-logo"
           >
-            <span className={`font-signature text-3xl sm:text-3.5xl group-hover:text-[#2dd4bf] tracking-wide transition-colors ${
-              scrolled ? "text-slate-900" : "text-white"
-            }`}>
-              Tazul Islam
-            </span>
+            {/* Abstract corporate double-ring styled mark */}
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gradient-to-tr from-[#0a8f76] to-[#5be2c6] p-[2px] flex items-center justify-center shadow-sm group-hover:rotate-12 transition-transform duration-300">
+              <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                <div className="w-5 h-5 rounded-full bg-[#0a8f76] flex items-center justify-center text-white font-black text-[10px]">
+                  TI
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col text-left">
+              <span className="text-lg sm:text-xl font-black text-slate-800 tracking-tight leading-none group-hover:text-[#0a8f76] transition-colors font-sans">
+                Tazul<span className="text-[#0a8f76]">Islam.</span>
+              </span>
+              <span className="text-[8px] font-bold text-slate-400 tracking-widest uppercase leading-none mt-0.5">
+                Executive Portfolio
+              </span>
+            </div>
           </a>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation Menu Links */}
           <div className="hidden lg:flex items-center space-x-1">
             {navItems.map((item) => (
               <a
                 key={item.id}
                 href={`#${item.id}`}
                 onClick={(e) => handleNavClick(e, item.id)}
-                className={`px-4 py-2 rounded-full text-sm font-medium tracking-wide transition font-sans ${
+                className={`px-4.5 py-2 rounded-full text-xs sm:text-sm font-semibold tracking-wide transition font-sans ${
                   activeSection === item.id
-                    ? scrolled
-                      ? "bg-teal-500/10 text-teal-700 font-semibold border border-teal-500/20"
-                      : "bg-white/10 text-white font-semibold"
-                    : scrolled
-                      ? "text-slate-600 hover:text-slate-900 hover:bg-slate-100"
-                      : "text-slate-300 hover:text-white hover:bg-white/5"
+                    ? "bg-[#0a8f76]/10 text-[#0a8f76] font-extrabold border border-[#0a8f76]/25"
+                    : "text-slate-600 hover:text-[#0a8f76] hover:bg-[#0a8f76]/5"
                 }`}
                 id={`nav-item-${item.id}`}
               >
@@ -118,25 +130,33 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
             ))}
           </div>
 
-          {/* Direct Actions & Phone (Mockup design style) */}
-          <div className="hidden lg:flex items-center space-x-4">
+          {/* Desktop Direct Contact Widgets & Phone (BizCorpo style) */}
+          <div className="hidden lg:flex items-center space-x-4 xl:space-x-6">
             <a 
               href="tel:+8801921460081" 
-              className={`flex items-center space-x-2 transition text-sm font-mono ${
-                scrolled ? "text-slate-600 hover:text-teal-600" : "text-slate-300 hover:text-[#2dd4bf]"
-              }`}
+              className="flex items-center space-x-2.5 group text-left"
             >
-              <Phone className="w-4 h-4 text-[#2dd4bf]" />
-              <span>+880 (192) 1460 081</span>
+              {/* Circular contact icon bubble */}
+              <div className="p-2 sm:p-2.5 bg-teal-500/10 text-[#0a8f76] rounded-full group-hover:bg-[#0a8f76] group-hover:text-white transition-all duration-300 shrink-0">
+                <Phone className="w-4.5 h-4.5" />
+              </div>
+              <div className="flex flex-col leading-none">
+                <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">
+                  Make A Call Anytime
+                </span>
+                <span className="text-xs sm:text-sm font-extrabold text-slate-800 hover:text-[#0a8f76] transition-colors mt-0.5 font-mono">
+                  +880 (192) 1460 081
+                </span>
+              </div>
             </a>
             
             <button
                onClick={onOpenResume}
-              className="group flex items-center space-x-1.5 px-4 py-2 bg-gradient-to-r from-amber-500 to-[#c29d53] hover:from-amber-600 hover:to-[#a17c36] text-slate-950 text-xs font-semibold rounded-full shadow-lg shadow-amber-500/10 transition-all cursor-pointer"
+              className="group flex items-center space-x-1.5 px-5 py-2.5 bg-[#f59e0b] hover:bg-[#ea580c] text-white text-xs font-bold rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
               id="header-resume-btn"
             >
-              <span>View Full CV</span>
-              <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              <span>View My CV</span>
+              <ArrowUpRight className="w-4 h-4" />
             </button>
           </div>
 
@@ -144,22 +164,18 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
           <div className="flex lg:hidden items-center space-x-3">
             <button
               onClick={onOpenResume}
-              className="flex items-center space-x-1 text-xs px-3 py-1.5 bg-gradient-to-r from-amber-500 to-[#c29d53] text-slate-950 rounded-full font-semibold shadow"
+              className="flex items-center space-x-1 text-[10px] px-3.5 py-1.5 bg-[#f59e0b] text-white rounded-full font-bold shadow-md hover:bg-[#ea580c]"
             >
               <span>CV</span>
-              <ArrowUpRight className="w-3 h-3 text-slate-950" />
+              <ArrowUpRight className="w-3 h-3 text-white" />
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-[#2dd4bf] ${
-                scrolled 
-                  ? "text-slate-600 hover:text-slate-950 hover:bg-slate-100" 
-                  : "text-slate-300 hover:text-white hover:bg-white/5"
-              }`}
+              className="p-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-[#0a8f76] text-slate-755 hover:text-slate-900 hover:bg-slate-100"
               aria-label="Toggle Menu"
               id="mobile-hambuger-btn"
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? <X className="w-5.5 h-5.5" /> : <Menu className="w-5.5 h-5.5" />}
             </button>
           </div>
 
@@ -168,51 +184,39 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
 
       {/* Mobile Drawer */}
       <div 
-        className={`lg:hidden fixed inset-x-0 top-[60px] border-b shadow-xl transition-all duration-300 z-30 overflow-hidden ${
-          scrolled 
-            ? "bg-white border-slate-200" 
-            : "bg-[#1c0d02] border-white/10"
-        } ${
-          isOpen ? "max-h-screen opacity-100 py-6" : "max-h-0 opacity-0 pointer-events-none"
+        className={`lg:hidden fixed left-4 right-4 md:left-8 md:right-8 top-[84px] shadow-xl transition-all duration-300 z-30 overflow-hidden rounded-3xl bg-white/95 backdrop-blur-md border border-slate-200 ${
+          isOpen ? "max-h-[450px] opacity-100 py-6" : "max-h-0 opacity-0 pointer-events-none"
         }`}
       >
-        <div className="px-4 space-y-3">
+        <div className="px-6 space-y-2">
           {navItems.map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
               onClick={(e) => handleNavClick(e, item.id)}
-              className={`block px-4 py-3 rounded-xl text-base font-medium transition ${
+              className={`block px-4 py-2.5 rounded-full text-sm font-bold transition text-left ${
                 activeSection === item.id
-                  ? scrolled
-                    ? "bg-teal-500/10 text-teal-700 font-bold"
-                    : "bg-white/10 text-white font-bold"
-                  : scrolled
-                    ? "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
-                    : "text-slate-300 hover:bg-white/5 hover:text-white"
+                  ? "bg-[#0a8f76]/10 text-[#0a8f76] font-extrabold"
+                  : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
               }`}
             >
               {item.label}
             </a>
           ))}
-          <div className={`pt-4 space-y-3 border-t ${scrolled ? "border-slate-100" : "border-white/10"}`}>
+          <div className="pt-4 space-y-2 border-t border-slate-100">
             <a 
               href="tel:+8801921460081"
-              className={`flex items-center space-x-3 px-4 py-3 rounded-xl transition ${
-                scrolled ? "text-slate-600 hover:text-slate-900 hover:bg-slate-50" : "text-slate-300 hover:text-white hover:bg-white/5"
-              }`}
+              className="flex items-center space-x-3 px-4 py-2.5 rounded-full transition text-slate-700 hover:text-slate-905 hover:bg-slate-50"
             >
-              <Phone className="w-5 h-5 text-[#2dd4bf]" />
-              <span className="font-mono text-sm">+880 (192) 1460 081</span>
+              <Phone className="w-4.5 h-4.5 text-[#0a8f76]" />
+              <span className="font-sans text-xs font-semibold">+880 (192) 1460 081</span>
             </a>
             <a 
               href="mailto:tazulislam4600@yahoo.com"
-              className={`flex items-center space-x-3 px-4 py-3 rounded-xl transition ${
-                scrolled ? "text-slate-600 hover:text-slate-900 hover:bg-slate-50" : "text-slate-300 hover:text-white hover:bg-white/5"
-              }`}
+              className="flex items-center space-x-3 px-4 py-2.5 rounded-full transition text-slate-700 hover:text-slate-900 hover:bg-slate-50"
             >
-              <Mail className="w-5 h-5 text-[#2dd4bf]" />
-              <span className="font-mono text-sm">tazulislam4600@yahoo.com</span>
+              <Mail className="w-4.5 h-4.5 text-[#0a8f76]" />
+              <span className="font-sans text-xs font-semibold">tazulislam4600@yahoo.com</span>
             </a>
           </div>
         </div>

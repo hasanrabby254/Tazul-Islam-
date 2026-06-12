@@ -66,7 +66,7 @@ export default function Skills() {
   return (
     <section 
       id="skills" 
-      className="py-24 bg-transparent relative"
+      className="py-24 bg-gradient-to-br from-[#f1f5f9] via-[#f8fafc] to-[#f1f5f9] relative border-b border-slate-200/60 shadow-[inset_0_4px_30px_rgba(0,0,0,0.02)]"
     >
       <div className="absolute right-0 top-1/4 w-72 h-72 bg-teal-500/5 rounded-full blur-3xl opacity-40"></div>
 

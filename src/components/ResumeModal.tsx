@@ -57,8 +57,8 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
             {/* Header / Name */}
             <div className="text-center pb-8 border-b border-slate-200">
               <h1 className="text-3xl font-bold font-display text-slate-900 tracking-tight">TAZUL ISLAM</h1>
-              <p className="text-lg font-medium text-teal-700 font-sans mt-1">Manager (Production)</p>
-              <p className="text-sm text-slate-500 font-display uppercase tracking-wider mt-1">Food, Beverage & Pharmaceuticals Specialist</p>
+              <p className="text-lg font-medium text-teal-700 font-sans mt-1">Head Of Operations</p>
+              <p className="text-sm text-slate-500 font-display uppercase tracking-wider mt-1">Food & Beverage Operations Specialist</p>
               
               {/* Contacts info Grid */}
               <div className="flex flex-wrap items-center justify-center gap-y-2 gap-x-6 text-sm text-slate-600 mt-4 font-mono">
@@ -88,7 +88,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                     <span>Executive Summary</span>
                   </h2>
                   <p className="text-sm leading-relaxed text-slate-600 mt-3 font-sans">
-                    Food and beverage industry professional with over 11 years of experience as a chemist, senior officer, assistant manager, and manager. Expert in decision-making, reporting, monitoring, evaluating action plans, production planning, and forecasting. Proven technical leadership in food manufacturing, bakery product formulation, process development, and cost minimization. Goal-oriented manager dedicated to maximizing line outputs while maintaining strict safety and regulatory compliances.
+                    Food and beverage industry professional with over 12+ years of progressive leadership experience as a chemist, quality control officer, assistant manager, and head of operations. Expert in strategic decision-making, performance reporting, system monitoring, evaluation of action plans, production planning, and capacity forecasting. Proven technical leadership in food manufacturing, bakery product formulation, process development, and cost minimization. Goal-oriented executive dedicated to maximizing line outputs while maintaining strict safety, IMS/GAO auditing, and Halal/BSTI regulatory compliances.
                   </p>
                 </div>
 

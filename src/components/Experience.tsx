@@ -18,7 +18,7 @@ export default function Experience() {
   return (
     <section 
       id="experience" 
-      className="py-24 bg-transparent relative"
+      className="py-24 bg-gradient-to-br from-white via-[#f8fafc] to-white relative border-b border-slate-100/80 shadow-[inset_0_8px_32px_rgba(0,0,0,0.01)]"
     >
       <div className="absolute top-0 right-0 w-64 h-64 bg-teal-500/5 rounded-full blur-3xl"></div>
       

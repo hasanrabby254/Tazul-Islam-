@@ -41,7 +41,7 @@ export default function EducationCertifications() {
   return (
     <section 
       id="education" 
-      className="py-24 bg-transparent relative"
+      className="py-24 bg-gradient-to-tr from-[#f1f5f9] via-[#f8fafc] to-[#f1f5f9] relative border-y-2 border-[#0a8f76]/30 shadow-[inset_0_6px_30px_rgba(10,143,118,0.04)]"
     >
       <div className="absolute left-0 top-1/2 -translate-y-1/2 w-48 h-96 bg-teal-500/5 rounded-r-full -z-0 opacity-40 blur-3xl"></div>
 

@@ -28,7 +28,7 @@ export default function Summary() {
   return (
     <section 
       id="summary" 
-      className="py-24 bg-transparent relative overflow-hidden"
+      className="py-24 bg-gradient-to-tr from-white via-[#f8fafc] to-white relative overflow-hidden border-b border-slate-100/80 shadow-[inset_0_8px_32px_rgba(0,0,0,0.01)]"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -66,8 +66,8 @@ export default function Summary() {
               />
               
               <div className="absolute bottom-4 left-4 right-4 z-20 p-3.5 bg-slate-900/90 backdrop-blur-md rounded-xl border border-white/10 text-left">
-                <span className="text-[10px] font-extrabold text-[#c29d53] uppercase tracking-wider font-mono block">Food & Pharma Operations</span>
-                <p className="text-xs font-bold text-white mt-0.5 font-sans">Tazul Islam (Production Manager)</p>
+                <span className="text-[10px] font-extrabold text-[#c29d53] uppercase tracking-wider font-mono block">Food & Beverage Operations</span>
+                <p className="text-xs font-bold text-white mt-0.5 font-sans">Tazul Islam (Head of Operations)</p>
               </div>
             </div>
           </motion.div>
@@ -89,11 +89,11 @@ export default function Summary() {
               </h3>
               
               <p className="text-slate-650 text-sm leading-relaxed font-sans mt-3">
-                Food and beverage industry professional with over <strong>11 years of experience</strong> as a chemist, senior officer, assistant manager, and manager. Expert in decision-making, reporting, monitoring, evaluating action plans, production planning, and forecasting.
+                Food and beverage industry professional with over <strong>12+ years of experience</strong> as a chemist, quality control officer, assistant manager, and head of operations. Expert in strategic decision-making, performance reporting, system monitoring, evaluation of action plans, production planning, and capacity forecasting.
               </p>
               
               <p className="text-slate-650 text-sm leading-relaxed font-sans mt-3">
-                Proven technical leadership in food manufacturing, bakery product formulation, process development, and raw/packaging materials quality optimization. Highly experienced with cGMP requirements, standard operating audits, and cross-functional team coordination. My goal is to secure a managerial position in the production department where I can drive robust scaling, optimize efficiency, and maintain absolute regulatory excellence.
+                Proven technical leadership in food manufacturing, bakery product formulation, process development, and raw/packaging materials quality optimization. Highly experienced with cGMP requirements, standard operating audits (IMS and GAO), and cross-functional team training. My goal is to drive robust industrial scaling, optimize production line efficiency, and maintain absolute regulatory excellence as Head of Operations.
               </p>
 
               <div className="flex items-center space-x-4 mt-6 p-3 bg-slate-50 border border-slate-200/80 rounded-xl">
