@@ -40,7 +40,8 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
       for (const item of navItems) {
         const el = document.getElementById(item.id);
         if (el) {
-          const top = el.offsetTop;
+          const rect = el.getBoundingClientRect();
+          const top = rect.top + window.scrollY;
           const height = el.offsetHeight;
           if (scrollPosition >= top && scrollPosition < top + height) {
             setActiveSection(item.id);
@@ -58,7 +59,8 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
     setIsOpen(false);
     const target = document.getElementById(id);
     if (target) {
-      const offsetTop = target.offsetTop - 80;
+      const rect = target.getBoundingClientRect();
+      const offsetTop = rect.top + window.scrollY - 80;
       window.scrollTo({
         top: id === "home" ? 0 : offsetTop,
         behavior: "smooth"
@@ -172,7 +174,7 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-[#0a8f76] text-slate-755 hover:text-slate-900 hover:bg-slate-100"
+              className="p-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-[#0a8f76] text-slate-600 hover:text-slate-900 hover:bg-slate-100"
               aria-label="Toggle Menu"
               id="mobile-hambuger-btn"
             >
@@ -207,7 +209,7 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
           <div className="pt-4 space-y-2 border-t border-slate-100">
             <a 
               href="tel:+8801921460081"
-              className="flex items-center space-x-3 px-4 py-2.5 rounded-full transition text-slate-700 hover:text-slate-905 hover:bg-slate-50"
+              className="flex items-center space-x-3 px-4 py-2.5 rounded-full transition text-slate-700 hover:text-slate-900 hover:bg-slate-50"
             >
               <Phone className="w-4.5 h-4.5 text-[#0a8f76]" />
               <span className="font-sans text-xs font-semibold">+880 (192) 1460 081</span>
